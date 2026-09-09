@@ -1,0 +1,16 @@
+Este programa es desarrollado por RunixTC desde Godot, buscando simplificar los png tuber
+
+A pesar de ser simple no significa que lso desarrolladores no puedan usarlo, y aunque no tiene forma de importar
+archivos png o jpg de momento, intento hacer que la app sea lo mas ligera posible para ejecutarse en cualquier app de streaming,
+unicamente la app muestra a tu PNG TUBER en todas las pantallas adaptado para linux por ejemplo con GPU SCREEN RECORDER o apps
+que no son realmente muy modificables.
+
+Si eres desarrollador:
+	- puedes ayudar a desarrollar modificaciones de la app, ya sea hacerlo mas ligero o hacerle modificaciones propias.
+	- la aplicacion es de uso libre, solo revisa la licencia GNU que hay en la aplicacion y su repositorio
+	- Usalo bajo tu responsabilidad en caso de modificar algo.
+
+Si eres un usuario:
+	- la aplicacion tiene personajes por defecto, puedes seleccionarlo en los metodos de la ventana flotante extra para cambiarlos
+	- para poder colocar tu personaje propio solo requieres tener la cabeza y su cuerpo, con ello modifica como quieras al personaje
+	- al principio puede haber problemas por no poder tener casi nada, RunixTC intenta revisar lo mas que puede el repositorio91

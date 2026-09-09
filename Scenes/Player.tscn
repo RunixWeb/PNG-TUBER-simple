@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dujhehvc6r8ck"]
+
+[ext_resource type="Texture2D" uid="uid://raohejvjfnio" path="res://icon.svg" id="1_rpqav"]
+[ext_resource type="Script" uid="uid://dpke2ta12yak8" path="res://Code/audio.gd" id="2_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://b888dfenppmhw" path="res://Assets/Icons/CrabCodeStudio .png" id="3_gntrk"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_77vfb"]
+
+[sub_resource type="Gradient" id="Gradient_gntrk"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dewec"]
+gradient = SubResource("Gradient_gntrk")
+
+[node name="Head" type="Sprite2D" unique_id=2064965138]
+
+[node name="Body" type="Sprite2D" parent="." unique_id=400955937]
+modulate = Color(1, 1, 1, 0.28627452)
+texture = ExtResource("1_rpqav")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=563762616]
+stream = SubResource("AudioStreamMicrophone_77vfb")
+autoplay = true
+bus = &"MIC"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=705537968 node_paths=PackedStringArray("sprite_modificado")]
+script = ExtResource("2_kyqiw")
+textura_0 = ExtResource("3_gntrk")
+textura_1 = ExtResource("1_rpqav")
+textura_2 = SubResource("GradientTexture1D_dewec")
+sprite_modificado = NodePath("..")
+threshold = 0.05
