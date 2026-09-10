@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cd2n7jdxwajfv"]
+
+[ext_resource type="PackedScene" uid="uid://qp7rnl6y2wj3" path="res://Scenes/ConfigWindow.tscn" id="1_aunrf"]
+[ext_resource type="Script" uid="uid://cu73oueiljqw8" path="res://Code/escena_player.gd" id="1_qvbqa"]
+[ext_resource type="PackedScene" uid="uid://dujhehvc6r8ck" path="res://Scenes/Player.tscn" id="3_wi2y4"]
+
+[node name="Node2D" type="Node2D" unique_id=1269003144]
+script = ExtResource("1_qvbqa")
+
+[node name="Window" parent="." unique_id=1418999180 node_paths=PackedStringArray("player") instance=ExtResource("1_aunrf")]
+player = NodePath("../Head")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1739071581]
+
+[node name="Head" parent="." unique_id=2064965138 instance=ExtResource("3_wi2y4")]

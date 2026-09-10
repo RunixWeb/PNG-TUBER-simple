@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://qp7rnl6y2wj3"]
+
+[ext_resource type="Script" uid="uid://djhat8ybmkoun" path="res://Code/config_window.gd" id="1_yvde8"]
+
+[node name="Window" type="Window" unique_id=1418999180]
+transparent_bg = true
+oversampling_override = 1.0
+title = "PanelDeControl"
+position = Vector2i(0, 36)
+size = Vector2i(200, 104)
+exclusive = true
+unresizable = true
+transparent = true
+script = ExtResource("1_yvde8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1894788821]
+offset_right = 200.0
+offset_bottom = 66.0
+
+[node name="Salir" type="Button" parent="VBoxContainer" unique_id=600712288]
+layout_mode = 2
+text = "SALIR"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1792427175]
+layout_mode = 2
+
+[node name="POSX" type="LineEdit" parent="VBoxContainer/HBoxContainer" unique_id=2102938639]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "pox_x"
+
+[node name="POSY" type="LineEdit" parent="VBoxContainer/HBoxContainer" unique_id=475384587]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "pos_y"
+
+[node name="actualizar" type="Button" parent="VBoxContainer" unique_id=675569878]
+layout_mode = 2
+text = "Aplicar posicion"
+
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="VBoxContainer/actualizar" to="." method="_on_actualizar_pressed"]
